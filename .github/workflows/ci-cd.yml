@@ -1,0 +1,17 @@
+name: TSC CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository Checkout
+        uses: actions/checkout@v2
+
+      - name: Testing CI/CD
+        run: echo "🎉 CI/CD pipeline sahi se kaam kar rahi hai!"
